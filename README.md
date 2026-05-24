@@ -1,6 +1,7 @@
-<<<<<<< HEAD
 # WeAssist
-=======
+
+This have a react web application admin and caretaker management
+Flutter app for caretaker login
 # patient_assistance_app
 
 A new Flutter project.

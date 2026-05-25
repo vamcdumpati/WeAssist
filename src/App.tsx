@@ -11,11 +11,11 @@ const App: React.FC = () => {
 
   if (loading) {
     return (
-      <div 
-        style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center', 
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           minHeight: '100vh',
           background: 'var(--bg-primary)',
           color: '#ffffff',
@@ -40,7 +40,6 @@ const App: React.FC = () => {
             <Route path="/profile" exact component={Profile} />
             <Redirect from="/signup" to="/home" />
             <Redirect from="/" to="/home" />
-            {/* Fallback to home */}
             <Route path="*">
               <Redirect to="/home" />
             </Route>
@@ -50,7 +49,6 @@ const App: React.FC = () => {
           <Switch>
             <Route path="/" exact component={LoginPage} />
             <Route path="/signup" exact component={SignUpPage} />
-            {/* Fallback to login */}
             <Route path="*">
               <Redirect to="/" />
             </Route>

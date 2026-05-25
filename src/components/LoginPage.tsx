@@ -87,7 +87,7 @@ const LoginPage: React.FC = () => {
       })
       .then((sessionData) => {
         saveSession(sessionData);
-        history.push('/home');
+        window.location.href = '/home';
       })
       .catch((err) => {
         setError((err && err.message) || 'Login failed. Please check your credentials.');
